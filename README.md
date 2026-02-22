@@ -1,70 +1,114 @@
-Iniciando
-===============
+# Thesis – Programa de enseñanza (Django + React)
 
-## Descargar del repositorio utilizando --recurse-submodules
+Proyecto que combina un **backend** en Django y un **frontend** en React, orquestados con Docker. En local se usa SQLite; en producción, PostgreSQL.
 
-    $ git clone --recurse-submodule git@github.com:Sherman1000/thesis-desousa-wright.git
+---
 
-Recordar completar el archivo `.env`. Se deja un ejemplo en `.env-example`
-    
-## Instalar Docker & Docker Compose
+## Requisitos previos
 
-https://docs.docker.com/compose/install/
+- **Git**
+- **Docker** y **Docker Compose** 
+  - [Instalar Docker](https://docs.docker.com/get-docker/)
+  - [Instalar Docker Compose](https://docs.docker.com/compose/install/)
 
+---
 
-## Build & up a los containers containers:
+## Desarrollo local: pasos para levantar el proyecto
 
-Antes que nada, `cd` al repo:
+### 1. Clonar el repositorio
 
-    $ cd /path/to/thesis
-    $ sudo docker-compose -f docker-compose-local.yml build
-    $ sudo docker-compose -f docker-compose-local.yml up
+```bash
+git clone <url-del-repositorio>
+cd thesis
+```
 
-Para crear un usuario administrador y entrar al admin (http://localhost/admin/):
+### 2. Construir y levantar los contenedores
 
-    $ ./createsuperuser.sh
+Desde la raíz del proyecto:
+
+```bash
+docker compose -f docker-compose-local.yml build
+docker compose -f docker-compose-local.yml up
+```
+
+En local no hace falta ningún archivo `.env`: el backend usa SQLite (configurado en el compose local).
+
+### 3. Crear un usuario administrador
+
+Para acceder al panel de administración de Django:
+
+```bash
+./createsuperuser.sh
+```
 
 O manualmente:
 
-    $ docker-compose -f docker-compose-local.yml exec backend sh -c "cd /app/backend && python manage.py createsuperuser"
+```bash
+docker compose -f docker-compose-local.yml exec backend sh -c "cd /app/backend && python manage.py createsuperuser"
+```
 
-Deployment
-==========
+### 4. Usar la aplicación
 
-### Instalación en producción
-Primero, se deberá ajustar el archivo `docker/nginx/production/default.conf` para utilizar las urls de la máquina deseada.
+- **Aplicación (frontend):** [http://localhost](http://localhost)
+- **Admin Django:** [http://localhost/admin/](http://localhost/admin/)
 
-Luego, se debe ingresar a la máquina y descargar el proyecto. 
+---
 
-    $ git clone --recurse-submodule git@github.com:Sherman1000/thesis-desousa-wright.git
+## Producción
 
-A continuación se deberá generar el certificado ssl (explicación aquí: https://saasitive.com/tutorial/docker-compose-django-react-nginx-let-s-encrypt/)
+### Configuración previa
 
-    $ cd thesis-desousa-wright    
-    $ ./init-letsencrypt.sh
+1. Ajustar las URLs en `docker/nginx/production/default.conf` según el dominio/host que vayas a usar.
+2. En el servidor, clonar el proyecto:
+   ```bash
+   git clone <url-del-repositorio>
+   cd thesis
+   ```
+3. Copiar el ejemplo de variables de entorno y completar si es necesario:
+   ```bash
+   cp .env-example .env
+   ```
+   Editar `.env` con los valores de PostgreSQL que quieras usar (por defecto el ejemplo coincide con lo que espera el backend).
+4. Certificados SSL (por ejemplo con Let's Encrypt):  
+   [Tutorial recomendado](https://saasitive.com/tutorial/docker-compose-django-react-nginx-let-s-encrypt/)  
+   En este proyecto suele usarse:
+   ```bash
+   ./init-letsencrypt.sh
+   ```
 
-Luego de eso, ya estamos listos para levantar el sistema. Notar que estamos trabajando con `docker-compose.yml` y no con su contraparte local:
+### Levantar en producción
 
-    $ sudo docker-compose -f docker-compose.yml build
-    $ sudo docker-compose -f docker-compose.yml up -d
+```bash
+docker compose -f docker-compose.yml build
+docker compose -f docker-compose.yml up -d
+```
 
-Listo! Tu aplicación está lista para utilizar. 
+(En producción se usa `docker-compose.yml`, no `docker-compose-local.yml`.)
 
-### Deploy de modificaciones al proyecto funcionando
+### Actualizar después de cambios
 
-    $ cd thesis-desousa-wright
-    $ git pull --recurse-submodules
-    $ sudo docker-compose -f docker-compose.yml build
-    $ sudo docker-compose -f docker-compose.yml up -d
+```bash
+git pull
+docker compose -f docker-compose.yml build
+docker compose -f docker-compose.yml up -d
+```
 
+---
 
-Explicación del Repo
-==========
+## Estructura del repositorio
 
-El repo consiste en dos submodules que manejan tanto backend como frontend. Este repo base se encarga de resolver docker y la inicialización del proyecto.
+| Elemento | Descripción |
+|----------|-------------|
+| **backend/** | Aplicación Django (API, modelos, admin). |
+| **frontend/** | Aplicación React (interfaz del programa). |
+| **docker/** | Dockerfiles y configuraciones de nginx (desarrollo y producción). |
+| **docker-compose-local.yml** | Orquestación para desarrollo (backend + nginx, SQLite). |
+| **docker-compose.yml** | Orquestación para producción (backend + nginx + PostgreSQL + certbot). |
+| **createsuperuser.sh** | Script para crear un superusuario de Django con los contenedores levantados. |
 
-Se pueden encontrar los archivos para iniciar el proyecto con docker-compose tanto localmente como en producción.
+En local, Docker construye el frontend (React) dentro de la imagen de nginx y sirve estáticos; el backend corre en otro contenedor y se accede por `/api`, `/admin` y `/media` a través de nginx.
 
-En la carpeta `docker` se pueden encontrar los Dockerfile correspondientes al container de Backend y al de nginx (el cual sirve, además de nginx, al repo frontend).
+Para más detalle del backend y del frontend, ver:
 
-A su vez, en la carpeta del container de nginx, además de su correspondiente Dockerfile, se pueden encontrar las configuraciones de nginx tanto para el ambiente local como para el de producción (que agrega certificados SSL para soportar https).
+- [backend/README.md](backend/README.md)
+- [frontend/README.md](frontend/README.md)
