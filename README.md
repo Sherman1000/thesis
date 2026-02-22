@@ -52,6 +52,21 @@ docker compose -f docker-compose-local.yml exec backend sh -c "cd /app/backend &
 - **Aplicación (frontend):** [http://localhost](http://localhost)
 - **Admin Django:** [http://localhost/admin/](http://localhost/admin/)
 
+### 5. Configuración mínima en el admin
+
+Para un uso normal de la aplicación, en el admin hay que dar de alta al menos:
+
+1. **Un curso**  
+   En *Cursos*: crear un curso (cuatrimestre y año). El sistema toma como “curso actual” el último curso creado. Sin al menos un curso, la importación de alumnos y otras funciones que dependen del curso actual pueden fallar.
+
+Si vas a cargar alumnos por CSV desde el admin (*Importar estudiantes*), ese curso debe existir antes, porque los registros se asocian al curso actual.
+
+### 6. Nota sobre CSRF si usás el admin
+
+Si tenés sesión iniciada en el admin ([http://localhost/admin/](http://localhost/admin/)) y en la misma sesión del navegador entrás a la aplicación ([http://localhost](http://localhost)), algunas peticiones del frontend pueden fallar con **CSRF error**. Es por compartir cookies/sesión entre admin y app.
+
+Para evitarlo: usar la app en otra pestaña en modo incógnito, en otro navegador, o cerrar sesión en el admin cuando estés probando la aplicación como alumno.
+
 ---
 
 ## Producción
