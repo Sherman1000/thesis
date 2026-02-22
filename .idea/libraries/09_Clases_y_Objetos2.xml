@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="09_Clases_y_Objetos2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/frontend/build/content/09_Clases_y_Objetos/ejs.zip!/" />
+      <root url="jar://$PROJECT_DIR$/frontend/build/content/09_Clases_y_Objetos/clase9_colas.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

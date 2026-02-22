@@ -1,0 +1,36 @@
+.app-form {
+  width: 50%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  padding: 20px;
+  background-color: white;
+  border: 0.2rem solid #ececec;
+  border-radius: 8px;
+}
+
+.app-large-form {
+  padding: 20px;
+  background-color: white;
+  border: 0.2rem solid #ececec;
+  border-radius: 8px;
+}
+
+.app-form-header {
+  font-size: 32px;
+  text-align: center;
+}
+
+.app-submit-error-msg {
+  font-size: .875em;
+  color: #dc3545;
+}
+
+.app-submit-success-msg {
+  font-size: .875em;
+  color: #084298;;
+}
+
+.unit-submission-btn {
+  background-color: black;
+}

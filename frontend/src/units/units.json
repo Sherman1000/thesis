@@ -1,0 +1,83 @@
+{
+  "1": {
+    "exercises": ["rebotes.py", "hipoteca.py", "esfera.py", "geringoso.py"],
+    "dueDate": "2022/03/17"
+  },
+  "2": {
+    "exercises": [
+      "buscar_precios.py",
+      "costo_camion.py",
+      "camion_commandline.py",
+      "diccionario_geringoso.py",
+      "informe.py"
+    ],
+    "dueDate": "2022/03/24"
+  },
+  "3": {
+    "exercises": [
+      "solucion_de_errores.py",
+      "costo_camion.py",
+      "tabla_informe.py",
+      "tablamult.py",
+      "arboles.py"
+    ],
+    "dueDate": "2022/03/31"
+  },
+  "4": {
+    "exercises": [
+      "busqueda_en_listas.py",
+      "invlista.py",
+      "propaga.py",
+      "arboles.py"
+    ],
+    "dueDate": "2022/04/14"
+  },
+  "5": {
+    "exercises": [
+      "generala.py",
+      "termometro.py",
+      "plotear_temperaturas.py",
+      "figuritas.py",
+      "arboles.py"
+    ],
+    "dueDate": "2022/04/21"
+  },
+  "6": {
+    "exercises": [
+      "fileparse.py",
+      "informe_funciones.py",
+      "costo_camion.py",
+      "bbin.py",
+      "plot_bbin_vs_bsec.py"
+    ],
+    "dueDate": "2022/04/28"
+  },
+  "7": {
+    "exercises": [
+      "fileparse.py",
+      "informe_final.py",
+      "documentacion.py",
+      "random_walk.py"
+    ],
+    "dueDate": "2022/05/56"
+  },
+  "8": {
+    "exercises": [
+      "vida.py",
+      "listar_imgs.py",
+      "arbolado_parques_veredas.py",
+      "mareas_a_mano.py"
+    ],
+    "dueDate": "2022/05/12"
+  },
+  "9": {
+    "exercises": [
+      "informe_final.py",
+      "lote.py",
+      "torre_control.py",
+      "canguros_buenos.py",
+      "NDVI.py"
+    ],
+    "dueDate": "2022/06/01"
+  }
+}

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Ejercicios">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/frontend/build/content/Ejercicios.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

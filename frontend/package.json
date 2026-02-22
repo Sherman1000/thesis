@@ -1,0 +1,85 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "contributors": [
+    "Carolina Wright",
+    "German De Sousa"
+  ],
+  "author": "Carolina Wright",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "bootstrap": "^5.1.3",
+    "husky": "^7.0.4",
+    "install": "^0.13.0",
+    "lint-staged": "^12.1.2",
+    "marked": "^4.0.5",
+    "npm": "^7.21.1",
+    "prettier": "^2.5.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.0.3",
+    "react-bootstrap-table-next": "^4.0.3",
+    "react-dom": "^17.0.2",
+    "react-ga": "^3.3.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/marked": "^4.0.1",
+    "@types/node": "^16.11.7",
+    "@types/react-bootstrap": "^0.32.29",
+    "@types/react-bootstrap-table-next": "^4.0.17",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-router-dom": "^5.3.2",
+    "typescript": "^4.5.2"
+  },
+  "scripts": {
+    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start --watch",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "npm prettier --write ."
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "import/first": "off"
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/*.ts?(x)"
+        ]
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
+  }
+}

@@ -1,0 +1,361 @@
+{
+  "inicio": {
+    "title": "Inicio",
+    "file": "/content/index.md"
+  },
+  "about": {
+    "title": "Sobre el curso",
+    "condiciones": {
+      "title": "Condiciones de cursada",
+      "file": "/content/Cursada.md"
+    },
+    "contenidos": {
+      "title": "Contenidos",
+      "file": "/content/Contenidos.md"
+    },
+    "instalacion": {
+      "title": "Instalación de Python",
+      "file": "/content/Instalacion.md"
+    },
+    "codigo": {
+      "title": "Código de conducta",
+      "file": "/content/Codigo.md"
+    },
+    "slack": {
+      "title": "Slack",
+      "file": "/content/Slack.md"
+    }
+  },
+  "units": {
+    "title": "Unidades",
+    "introduccion": {
+      "title": "01 - Introducción",
+      "date": "2022/03/09",
+      "resumen": {
+        "title": "1. Introducción a Python",
+        "file": "/content/01_Introduccion/00_Resumen.md"
+      },
+      "python": {
+        "title": "1.1 Python",
+        "file": "/content/01_Introduccion/01_Python.md"
+      },
+      "hello-world": {
+        "title": "1.2 Un primer programa",
+        "file": "/content/01_Introduccion/02_Hello_world.md"
+      },
+      "numeros": {
+        "title": "1.3 Números",
+        "file": "/content/01_Introduccion/03_Numeros.md"
+      },
+      "cadenas": {
+        "title": "1.4 Cadenas",
+        "file": "/content/01_Introduccion/04_Strings.md"
+      },
+      "Listas": {
+        "title": "1.5 Listas",
+        "file": "/content/01_Introduccion/05_Listas.md"
+      },
+      "cierre-de-clase": {
+        "title": "1.6 Cierre de la clase",
+        "file": "/content/01_Introduccion/06_CierreClase.md",
+        "isPrivate": true
+      }
+    },
+    "estructuras-y-funciones": {
+      "title": "02 - Estructuras y funciones",
+      "date": "2022/03/16",
+      "resumen": {
+        "title": "2. Estructuras y funciones",
+        "file": "/content/02_Estructuras_y_Funciones/00_Resumen.md"
+      },
+      "introduccion-y-repaso": {
+        "title": "2.1 Introducción y repaso",
+        "file": "/content/02_Estructuras_y_Funciones/01_Introduccion_y_repaso.md"
+      },
+      "manejo-archivos": {
+        "title": "2.2 Manejo de archivos",
+        "file": "/content/02_Estructuras_y_Funciones/02_Archivos.md"
+      },
+      "funciones": {
+        "title": "2.3 Funciones",
+        "file": "/content/02_Estructuras_y_Funciones/03_Funciones.md"
+      },
+      "tipos-datos": {
+        "title": "2.4 Tipos y estructuras de datos",
+        "file": "/content/02_Estructuras_y_Funciones/04_TiposDatos.md"
+      },
+      "contenedores": {
+        "title": "2.5 Contenedores",
+        "file": "/content/02_Estructuras_y_Funciones/05_Contenedores.md"
+      },
+      "cierre-de-clase": {
+        "title": "2.6 Cierre de la clase",
+        "file": "/content/02_Estructuras_y_Funciones/06_CierreClase.md",
+        "isPrivate": true
+      }
+    },
+    "datos": {
+      "title": "03 - Trabajando con datos",
+      "date": "2022/03/23",
+      "resumen": {
+        "title": "3. Trabajando con datos",
+        "file": "/content/03_Datos/00_Resumen.md"
+      },
+      "introduccion": {
+        "title": "3.1 Introducción",
+        "file": "/content/03_Datos/01_Introduccion.md"
+      },
+      "errores": {
+        "title": "3.2 Errores",
+        "file": "/content/03_Datos/02_Bugs.md"
+      },
+      "secuencias": {
+        "title": "3.3 Secuencias",
+        "file": "/content/03_Datos/03_Secuencias.md"
+      },
+      "contadores": {
+        "title": "3.4 Contadores del módulo collections",
+        "file": "/content/03_Datos/04_Contadores.md"
+      },
+      "ide": {
+        "title": "3.5 Entorno de desarrollo integrado",
+        "file": "/content/03_Datos/05_IDE.md"
+      },
+      "formato": {
+        "title": "3.6 Impresión con formato",
+        "file": "/content/03_Datos/06_Formato.md"
+      },
+      "arboles": {
+        "title": "3.7 Arbolado porteño",
+        "file": "/content/03_Datos/07_Arboles1.md"
+      },
+      "cierre-de-clase": {
+        "title": "3.8 Cierre de clase",
+        "file": "/content/03_Datos/08_CierreClase.md",
+        "isPrivate": true
+      }
+    },
+    "listas": {
+      "title": "04 - Algoritmos sobre listas y comprensión de listas",
+      "date": "2022/03/30",
+      "resumen": {
+        "title": "4. Algoritmos sobre listas y comprensión de listas",
+        "file": "/content/04_Listas_y_Listas/00_Resumen.md"
+      },
+      "debugger": {
+        "title": "4.1 Debuggear programas",
+        "file": "/content/04_Listas_y_Listas/01_Debugger.md"
+      },
+      "iteradores": {
+        "title": "4.2 Listas y búsqueda lineal",
+        "file": "/content/04_Listas_y_Listas/02_IteradoresLista.md"
+      },
+      "comprension": {
+        "title": "4.3 Comprensión de listas",
+        "file": "/content/04_Listas_y_Listas/03_Comprension_Listas.md"
+      },
+      "objetos": {
+        "title": "4.4 Objetos",
+        "file": "/content/04_Listas_y_Listas/04_Objetos.md"
+      },
+      "arboles": {
+        "title": "4.5 Arbolado porteño y comprensión de listas ",
+        "file": "/content/04_Listas_y_Listas/05_Arboles2_LC.md"
+      },
+      "cierre-de-clase": {
+        "title": "4.6 Cierre de clase",
+        "file": "/content/04_Listas_y_Listas/06_Cierre.md",
+        "isPrivate": true
+      }
+    },
+    "aleatoriedad": {
+      "title": "05 - Aleatoriedad",
+      "date": "2022/04/13",
+      "resumen": {
+        "title": "5. Aleatoriedad",
+        "file": "/content/05_Random_Plt_Dbg/00_Resumen.md"
+      },
+      "repaso": {
+        "title": "5.1 Repaso",
+        "file": "/content/05_Random_Plt_Dbg/01_Repaso.md"
+      },
+      "random": {
+        "title": "5.2 Random",
+        "file": "/content/05_Random_Plt_Dbg/02_Random.md"
+      },
+      "numpy": {
+        "title": "5.3 NumPy",
+        "file": "/content/05_Random_Plt_Dbg/03_NumPy_Arrays.md"
+      },
+      "figuritas": {
+        "title": "5.4 El Album de Figuritas",
+        "file": "/content/05_Random_Plt_Dbg/04_Figuritas.md"
+      },
+      "arboles": {
+        "title": "5.5 Gráficos del Arbolado porteño",
+        "file": "/content/05_Random_Plt_Dbg/05_Arboles3_plt.md"
+      },
+      "cierre-de-clase": {
+        "title": "5.6 Cierre de la clase",
+        "file": "/content/05_Random_Plt_Dbg/06_Cierre.md",
+        "isPrivate": true
+      }
+    },
+    "organizacion-y-complejidad": {
+      "title": "06 - Complejididad y Organización de programas",
+      "date": "2022/04/20",
+      "resumen": {
+        "title": "6. Complejidad y Organización de programas",
+        "file": "/content/06_Organizacion_y_Complejidad/00_Resumen.md"
+      },
+      "repaso": {
+        "title": "6.1 Repaso de temas pasados",
+        "file": "/content/06_Organizacion_y_Complejidad/01_Repaso.md"
+      },
+      "scripting": {
+        "title": "6.2 Scripting",
+        "file": "/content/06_Organizacion_y_Complejidad/02_Scripts.md"
+      },
+      "funciones": {
+        "title": "6.3 Funciones",
+        "file": "/content/06_Organizacion_y_Complejidad/03_Funciones.md"
+      },
+      "modulos": {
+        "title": "6.4 Módulos",
+        "file": "/content/06_Organizacion_y_Complejidad/04_Modulos.md"
+      },
+      "busqueda-binaria": {
+        "title": "6.5 Búsqueda Binaria",
+        "file": "/content/06_Organizacion_y_Complejidad/05_BusqBinaria.md"
+      },
+      "complejidad": {
+        "title": "6.6 Complejidad de algoritmos",
+        "file": "/content/06_Organizacion_y_Complejidad/06_Complejidad.md"
+      },
+      "graficos": {
+        "title": "6.7 Gráficos de complejidad",
+        "file": "/content/06_Organizacion_y_Complejidad/07_graficos_de_complejidad.md"
+      },
+      "cierre-de-clase": {
+        "title": "6.8 Cierre de clase",
+        "file": "/content/06_Organizacion_y_Complejidad/08_Cierre.md",
+        "isPrivate": true
+      }
+    },
+    "diseño-y-documentacion": {
+      "title": "07 - Diseño, especificación, documentación y estilo",
+      "date": "2022/04/27",
+      "resumen": {
+        "title": "7. Diseño, especificación, documentación y estilo",
+        "file": "/content/07_Plt_Especificacion_y_Documentacion/00_Resumen.md"
+      },
+      "repaso": {
+        "title": "7.1 - Repaso de temas pasados",
+        "file": "/content/07_Plt_Especificacion_y_Documentacion/01_Repaso.md"
+      },
+      "excepciones": {
+        "title": "7.2 - Control de errores",
+        "file": "/content/07_Plt_Especificacion_y_Documentacion/02_Excepciones.md"
+      },
+      "modulo-principal": {
+        "title": "7.3 - El módulo principal",
+        "file": "/content/07_Plt_Especificacion_y_Documentacion/03_Modulo_principal.md"
+      },
+      "flexibilidad": {
+        "title": "7.4 - Cuestiones de diseño",
+        "file": "/content/07_Plt_Especificacion_y_Documentacion/04_Flexibilidad.md"
+      },
+      "especificacion-y-documentacion": {
+        "title": "7.5 - Contratos: Especificación y Documentación",
+        "file": "/content/07_Plt_Especificacion_y_Documentacion/05_Especificacion_y_Documentacion.md"
+      },
+      "estilo": {
+        "title": "7.6 - Estilos de codeo",
+        "file": "/content/07_Plt_Especificacion_y_Documentacion/06_Estilo.md"
+      },
+      "matplotlib": {
+        "title": "7.7 - La biblioteca matplotlib",
+        "file": "/content/07_Plt_Especificacion_y_Documentacion/07_Matplotlib.md"
+      },
+      "cierre-de-clase": {
+        "title": "7.8 - Cierre de la clase",
+        "file": "/content/07_Plt_Especificacion_y_Documentacion/08_Cierre.md",
+        "isPrivate": true
+      }
+    },
+    "fechas-carpetas-y-pandas": {
+      "title": "08 - Fechas, Carpetas y Pandas",
+      "date": "2022/05/04",
+      "resumen": {
+        "title": "8. Fechas, Carpetas y Pandas",
+        "file": "/content/08_Fechas_Carpetas_y_Pandas/00_Resumen.md"
+      },
+      "introduccion": {
+        "title": "8.1 Introducción",
+        "file": "/content/08_Fechas_Carpetas_y_Pandas/01_Intro.md"
+      },
+      "fechas": {
+        "title": "8.2 Manejo de fechas y horas",
+        "file": "/content/08_Fechas_Carpetas_y_Pandas/02_Fechas.md"
+      },
+      "archivos-y-directorios": {
+        "title": "8.3 Manejo de archivos y carpetas",
+        "file": "/content/08_Fechas_Carpetas_y_Pandas/03_Archivos_y_Directorios.md"
+      },
+      "ordenando-archivos": {
+        "title": "8.4 Ordenar archivos en Python",
+        "file": "/content/08_Fechas_Carpetas_y_Pandas/04_Ordenando_archivos.md"
+      },
+      "pandas": {
+        "title": "8.5 Introducción a Pandas",
+        "file": "/content/08_Fechas_Carpetas_y_Pandas/05_Pandas.md"
+      },
+      "series": {
+        "title": "8.6 Series temporales",
+        "file": "/content/08_Fechas_Carpetas_y_Pandas/06_Series_Temporales.md"
+      },
+      "cierre-de-clase": {
+        "title": "8.7 Cierre de la clase",
+        "file": "/content/08_Fechas_Carpetas_y_Pandas/07_Cierre.md",
+        "isPrivate": true
+      }
+    },
+    "clases-y-objetos": {
+      "title": "09 - Clases y objetos",
+      "date": "2022/05/11",
+      "resumen": {
+        "title": "9. Clases y objetos",
+        "file": "/content/09_Clases_y_Objetos/00_Resumen.md"
+      },
+      "introduccion": {
+        "title": "9.1 Introducción",
+        "file": "/content/09_Clases_y_Objetos/01_Intro.md"
+      },
+      "clases": {
+        "title": "9.2 Clases",
+        "file": "/content/09_Clases_y_Objetos/02_Clases.md"
+      },
+      "herencia": {
+        "title": "9.3 Herencia",
+        "file": "/content/09_Clases_y_Objetos/03_Herencia.md"
+      },
+      "metodos-especiales": {
+        "title": "9.4 Métodos especiales",
+        "file": "/content/09_Clases_y_Objetos/04_Métodos_Especiales.md"
+      },
+      "pilas-colas": {
+        "title": "9.5 Objetos, pilas y colas",
+        "file": "/content/09_Clases_y_Objetos/05_Pilas_Colas.md"
+      },
+      "teledeteccion": {
+        "title": "9.6 Teledetección",
+        "file": "/content/09_Clases_y_Objetos/06_Teledeteccion.md"
+      },
+      "cierre-de-clase": {
+        "title": "9.7 Cierre de la clase",
+        "file": "/content/09_Clases_y_Objetos/07_Cierre.md",
+        "isPrivate": true
+      }
+    }
+  }
+}

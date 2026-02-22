@@ -1,0 +1,14 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+    <div>
+        <form action={% url 'create_pair_reviews_view' %} method="POST" enctype="multipart/form-data">
+            {{ form.as_p }}
+            {% csrf_token %}
+
+            <button type="submit">Crear Correcciones entre pares para la Unidad</button>
+        </form>
+    </div>
+    <br />
+
+{% endblock %}

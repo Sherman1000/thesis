@@ -1,0 +1,7 @@
+export const rootPath = '/'
+export const loginPath = '/login'
+export const signupPath = '/signup/:emailHash'
+export const programHomePath = '/programa/inicio'
+export const programPath = '/programa/*'
+export const correctionsPath = '/corrections'
+export const unitSubmissionPath = '/unit/submission/:unitNumber'

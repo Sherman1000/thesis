@@ -1,0 +1,21 @@
+"exercise_id","worked","executed_instruction","is_original","evaluated_code","correct_tests_percentage","recommendations","errors"
+1,"true","ord_burbujeo(lista)","true","def ord_burbujeo(lista):
+         'Ordena una lista por el método de burbujeo'     
+          def ordenar(lista, hasta):                  
+               if hasta == 0:             
+                   return lista         
+               for i in range (hasta):             
+                   if lista [i] > lista [i+1]:                 
+                      lista[i], lista[i+1] = lista[i+1], lista[i]         
+                      return ordenar (lista, hasta-1)          
+               Return ordenar(lista , len(lista)-1)",85,"[""Falla en la lista vacía""]","[“RecursionError('maximum recursion depth exceeded in comparison')”]"
+2,"false","<p>Para evaluar la función costo_camion la llamamos de la siguiente manera:</p><code>costo_camion(fname)</code></p><p>donde fname es el nombre de un archivo csv con informaci\u00f3n de un cami\u00f3n, no necesariamente ordenada como en \""camion.csv\"", y esperamos que nos devuelva el costo total del cami\u00f3n.</p>","false","def ord_burbujeo(lista):
+         'Ordena una lista por el método de burbujeo'     
+          def ordenar(lista, hasta):                  
+               if hasta == 0:             
+                   return lista         
+               for i in range (hasta):             
+                   if lista [i] > lista [i+1]:                 
+                      lista[i], lista[i+1] = lista[i+1], lista[i]         
+                      return ordenar (lista, hasta-1)          
+               Return ordenar(lista , len(lista)-1)",50,"[""Falla en la lista vacía""]","[""RecursionError('maximum recursion depth exceeded in comparison')""]"

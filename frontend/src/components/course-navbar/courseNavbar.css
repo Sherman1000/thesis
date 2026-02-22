@@ -1,0 +1,12 @@
+.content {
+  padding: 20px 40px;
+  border: 1px solid #80808061;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 10px 100px;
+}
+
+.navbar-container {
+  margin-left: auto;
+  margin-right: auto;
+}

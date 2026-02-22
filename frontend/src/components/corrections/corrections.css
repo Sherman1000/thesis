@@ -1,0 +1,20 @@
+.corrections {
+  margin: 20px 30px;
+}
+
+.unit-corrections-table {
+  padding: 20px;
+  background-color: white;
+  border: 0.2rem solid #ececec;
+  border-radius: 8px;
+}
+
+.app-form-header {
+  font-size: 32px;
+  text-align: center;
+}
+
+.login-msg {
+  display: inline-block;
+  padding-left: 10px;
+}

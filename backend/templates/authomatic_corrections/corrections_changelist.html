@@ -1,0 +1,20 @@
+{% extends 'admin/change_list.html' %}
+
+{% block object-tools %}
+    <ul class="object-tools" >
+        <li>
+            <a href="{% url 'export_for_authomatic_corrections_view' %}" class="addlink" >Exportar Ejercicios</a>
+        </li>
+    </ul>
+
+    <br><br>
+
+    <ul class="object-tools" >
+        <li>
+            <a href="{% url 'register_authomatic_correction_view' %}" class="addlink" >Import Authomatic Corrections via CSV</a>
+        </li>
+    </ul>
+
+    <br><br>
+    {{ block.super }}
+{% endblock %}

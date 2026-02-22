@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="10_Generadores_e_Iteradores2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/frontend/public/content/10_Generadores_e_Iteradores/archivos_mercado.zip!/" />
+      <root url="jar://$PROJECT_DIR$/frontend/public/content/10_Generadores_e_Iteradores/modelo.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
